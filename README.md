@@ -1,2 +1,2 @@
 # EdgeDeviceManagement
-A Edge Device backend service developed using Spring
+A Edge Device backend service developed using Spring boot
