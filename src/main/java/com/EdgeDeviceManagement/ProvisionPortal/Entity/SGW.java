@@ -13,11 +13,13 @@ public class SGW {
 
     @Id
     @GeneratedValue
-    private int id;
+    private Long id;
     private String serialNo;
     private String IP;
     private String state;
-    private List<App> appList;
+
+    //TODO: Figure out how to store this
+//    private List<App> appList;
 
 
     @Override
@@ -27,11 +29,11 @@ public class SGW {
                 ", serialNo='" + serialNo + '\'' +
                 ", IP='" + IP + '\'' +
                 ", state='" + state + '\'' +
-                ", appList=" + appList +
+//                ", appList=" + appList +
                 '}';
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
@@ -47,9 +49,9 @@ public class SGW {
         return state;
     }
 
-    public List<App> getAppList() {
-        return appList;
-    }
+//    public List<App> getAppList() {
+//        return appList;
+//    }
 
     public SGW(){
 
@@ -63,7 +65,7 @@ public class SGW {
         this.serialNo=serialNo;
         this.IP=IP;
         this.state=state;
-        this.appList=null;
+//        this.appList=null;
     }
 
 }
